@@ -23,9 +23,9 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="conteiner header_conteiner">
+      <div class="conteiner header__conteiner">
         <nav class="navigation">
-          <a class="logo logo_header" href="./index.html"
+          <a class="logo logo-header" href="./index.html"
             >Web<span class="logo__text">Studio</span></a
           >
           <ul class="header__nav-list">
@@ -33,7 +33,9 @@
               <a href="./index.html" class="header__nav-link">Студия</a>
             </li>
             <li class="header__nav-item">
-              <a href="./portfolio.html" class="header__nav-link header__nav-link--active">Портфолио</a>
+              <a href="./portfolio.html" class="header__nav-link header__nav-link--active"
+                >Портфолио</a
+              >
             </li>
             <li class="header__nav-item"><a href="" class="header__nav-link">Контакты</a></li>
           </ul>
@@ -64,19 +66,27 @@
         <div class="conteiner">
           <!-- Навигация карточек -->
           <h1 class="visibility-hidden">Портфолио</h1>
-          <ul class="page-nav">
-            <li class="page-item"><button class="btn current" type="button">Все</button></li>
-            <li class="page-item"><button class="btn" type="button">Веб-сайты</button></li>
-            <li class="page-item"><button class="btn" type="button">Приложения</button></li>
-            <li class="page-item"><button class="btn" type="button">Дизайн</button></li>
-            <li class="page-item"><button class="btn" type="button">Маркетинг</button></li>
+          <ul class="portfolio-nav">
+            <li class="portfolio-nav__item">
+              <button class="btn btn--current" type="button">Все</button>
+            </li>
+            <li class="portfolio-nav__item">
+              <button class="btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="portfolio-nav__item">
+              <button class="btn" type="button">Приложения</button>
+            </li>
+            <li class="portfolio-nav__item"><button class="btn" type="button">Дизайн</button></li>
+            <li class="portfolio-nav__item">
+              <button class="btn" type="button">Маркетинг</button>
+            </li>
           </ul>
           <!-- Карточки работ -->
-          <ul class="portfolio-list">
-            <li class="portfolio-item">
-              <div class="product-thumb">
+          <ul class="card-set">
+            <li class="card-set__item">
+              <div class="card-set__product-thumb">
                 <img src="./images/portfolio/laptop.jpg" alt="Ноутбук" width="370" height="294" />
-                <div class="portfolio-overlay">
+                <div class="card-set__overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -84,21 +94,20 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-card">
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+              <div class="card-set__text-box">
+                <h2 class="card-set__title">Технокряк</h2>
+                <p class="card-set__text">Веб-сайт</p>
               </div>
             </li>
-
-            <li class="portfolio-item">
-              <div class="product-thumb">
+            <li class="card-set__item">
+              <div class="card-set__product-thumb">
                 <img
                   src="./images/portfolio/bascketball.jpg"
                   alt="Баскетболисты"
                   width="370"
                   height="294"
                 />
-                <div class="portfolio-overlay">
+                <div class="card-set__overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -106,20 +115,20 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-card">
-                <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio-text">Дизайн</p>
+              <div class="card-set__text-box">
+                <h2 class="card-set__title">Постер New Orlean vs Golden Star</h2>
+                <p class="card-set__text">Дизайн</p>
               </div>
             </li>
-            <li class="portfolio-item">
-              <div class="product-thumb">
+            <li class="card-set__item">
+              <div class="card-set__product-thumb">
                 <img
                   src="./images/portfolio/seafood.jpg"
                   alt="Логотип Seafoof"
                   width="370"
                   height="294"
                 />
-                <div class="portfolio-overlay">
+                <div class="card-set__overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -127,20 +136,20 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-card">
-                <h2 class="portfolio-title">Ресторан Seafood</h2>
-                <p class="portfolio-text">Приложение</p>
+              <div class="card-set__text-box">
+                <h2 class="card-set__title">Ресторан Seafood</h2>
+                <p class="card-set__text">Приложение</p>
               </div>
             </li>
-            <li class="portfolio-item">
-              <div class="product-thumb">
+            <li class="card-set__item">
+              <div class="card-set__product-thumb">
                 <img
                   src="./images/portfolio/headphones.jpg"
                   alt="Наушники"
                   width="370"
                   height="294"
                 />
-                <div class="portfolio-overlay">
+                <div class="card-set__overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -148,15 +157,15 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-card">
-                <h2 class="portfolio-title">Проект Prime</h2>
-                <p class="portfolio-text">Маркетинг</p>
+              <div class="card-set__text-box">
+                <h2 class="card-set__title">Проект Prime</h2>
+                <p class="card-set__text">Маркетинг</p>
               </div>
             </li>
-            <li class="portfolio-item">
-              <div class="product-thumb">
+            <li class="card-set__item">
+              <div class="card-set__product-thumb">
                 <img src="./images/portfolio/boxes.jpg" alt="Коробки" width="370" height="294" />
-                <div class="portfolio-overlay">
+                <div class="card-set__overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -164,15 +173,15 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-card">
-                <h2 class="portfolio-title">Проект Boxes</h2>
-                <p class="portfolio-text">Приложение</p>
+              <div class="card-set__text-box">
+                <h2 class="card-set__title">Проект Boxes</h2>
+                <p class="card-set__text">Приложение</p>
               </div>
             </li>
-            <li class="portfolio-item">
-              <div class="product-thumb">
+            <li class="card-set__item">
+              <div class="card-set__product-thumb">
                 <img src="./images/portfolio/monitor.jpg" alt="Монитор" width="370" height="294" />
-                <div class="portfolio-overlay">
+                <div class="card-set__overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -180,15 +189,15 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-card">
-                <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+              <div class="card-set__text-box">
+                <h2 class="card-set__title">Inspiration has no Borders</h2>
+                <p class="card-set__text">Веб-сайт</p>
               </div>
             </li>
-            <li class="portfolio-item">
-              <div class="product-thumb">
+            <li class="card-set__item">
+              <div class="card-set__product-thumb">
                 <img src="./images/portfolio/book.jpg" alt="Книга" width="370" height="294" />
-                <div class="portfolio-overlay">
+                <div class="card-set__overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -196,15 +205,15 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-card">
-                <h2 class="portfolio-title">Издание Limited Edition</h2>
-                <p class="portfolio-text">Дизайн</p>
+              <div class="card-set__text-box">
+                <h2 class="card-set__title">Издание Limited Edition</h2>
+                <p class="card-set__text">Дизайн</p>
               </div>
             </li>
-            <li class="portfolio-item">
-              <div class="product-thumb">
+            <li class="card-set__item">
+              <div class="card-set__product-thumb">
                 <img src="./images/portfolio/label.jpg" alt="Бирка" width="370" height="294" />
-                <div class="portfolio-overlay">
+                <div class="card-set__overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -212,20 +221,20 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-card">
-                <h2 class="portfolio-title">Проект LAB</h2>
-                <p class="portfolio-text">Маркетинг</p>
+              <div class="card-set__text-box">
+                <h2 class="card-set__title">Проект LAB</h2>
+                <p class="card-set__text">Маркетинг</p>
               </div>
             </li>
-            <li class="portfolio-item">
-              <div class="product-thumb">
+            <li class="card-set__item">
+              <div class="card-set__product-thumb">
                 <img
                   src="./images/portfolio/hend-on-laptop.jpg"
                   alt="Ноутбук"
                   width="370"
                   height="294"
                 />
-                <div class="portfolio-overlay">
+                <div class="card-set__overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -233,9 +242,9 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-card">
-                <h2 class="portfolio-title">Growing Business</h2>
-                <p class="portfolio-text">Приложение</p>
+              <div class="card-set__text-box">
+                <h2 class="card-set__title">Growing Business</h2>
+                <p class="card-set__text">Приложение</p>
               </div>
             </li>
           </ul>
@@ -246,14 +255,16 @@
     <footer class="footer">
       <div class="conteiner footer__conteiner">
         <div class="footer__adress-wrapper">
-          <a href="./index.html" class="logo logo__footer">Web<span class="logo-text footer__logo-text">Studio</span></a>
+          <a href="./index.html" class="logo logo--footer"
+            >Web<span class="logo-text footer__logo-text">Studio</span></a
+          >
           <address class="footer__addres">
             <ul>
               <li>
                 <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
               <li class="footer__contacts">
-                <a href="mailto:info@example.com"">info@example.com</a>
+                <a href="mailto:info@example.com">info@example.com</a>
               </li>
               <li class="footer__contacts">
                 <a href="tel:+38099111111">+380991111111</a>
