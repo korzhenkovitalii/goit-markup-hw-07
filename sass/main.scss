@@ -1,5 +1,5 @@
 //Utils
-@import './utils/vars';
+@import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixins';
 
@@ -17,7 +17,6 @@
 @import './components/navigation';
 @import './components/card-set';
 
-
 //layouts
 @import './layouts/header';
 @import './layouts/hero';
@@ -26,4 +25,5 @@
 @import './layouts/team';
 @import './layouts/work';
 @import './layouts/clients';
-@import './layouts/fotter';
+@import './layouts/footer';
+@import './layouts/portfolio';

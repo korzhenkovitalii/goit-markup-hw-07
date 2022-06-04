@@ -15,10 +15,12 @@
 }
 .team__item {
   background-color: #fff;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.team__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .team__text-card {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -29,12 +31,11 @@
 }
 .team__name {
   font-weight: 500;
-}
-.team__name,
-.team__position {
   font-size: 16px;
   line-height: 1.19;
 }
 .team__position {
   margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
 }
