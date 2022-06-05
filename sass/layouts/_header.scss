@@ -1,9 +1,12 @@
-.header__conteiner {
-  display: flex;
-  height: 80px;
-
+.header {
   border-bottom: 1px solid #ececec;
+
+  &__conteiner {
+    display: flex;
+    height: 80px;
+  }
 }
+
 .logo-header {
   margin-right: 93px;
   padding-top: 24px;

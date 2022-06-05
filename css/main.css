@@ -148,7 +148,7 @@ img {
   background-color: var(--accent-color);
 }
 
-.social__icon-box {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,12 +547,15 @@ img {
   opacity: 1;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 80px;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo-header {
@@ -612,7 +615,7 @@ img {
   background-color: var(--bgc-hero);
 }
 
-.hero__overlay {
+.hero-overlay {
   height: 600px;
   max-width: 1600px;
   margin: 0 auto;
@@ -950,7 +953,7 @@ img {
   margin-bottom: 20px;
 }
 
-.footer__social-icon--color {
+.social__icon-item--footer-color {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--footer-text);
